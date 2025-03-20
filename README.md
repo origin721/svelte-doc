@@ -7,7 +7,7 @@ Svelte 5 introduces new reactive APIs like `$state`, `$derived`, and `$effect`, 
 
 According to the Svelte 5 documentation, any reactive value that is read synchronously inside an `$effect` is automatically tracked as a dependency. This includes values from `$state`, `$derived`, or even `$props`. When these dependencies change, Svelte schedules the effect to re-run.
 
-For example, consider this snippet from the documentation:
+[For example, consider this snippet from the documentation:](https://svelte.dev/docs/svelte/$effect#Understanding-dependencies)
 
 ```svelte
 $effect(() => {
