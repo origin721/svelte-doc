@@ -34,6 +34,8 @@ Let’s explore an example to illustrate this behavior and see how we might work
 
 In this code, we try to update `count2` based on `count`, but the update is scheduled asynchronously. Because the asynchronous callback isn’t tracked as a dependency, `count2` doesn’t update as expected.
 
+You can try inserting the code snippets into the sandbox at [this link](https://svelte.dev/tutorial/svelte/welcome-to-svelte).
+
 ```svelte
 <script>
   let count = $state(0);
@@ -143,4 +145,3 @@ The Svelte 5 documentation provides important insights into how reactive depende
 
 While Svelte 5's approach to reactivity can initially seem complex, understanding these nuances is key to writing robust applications. By sharing solutions and workarounds, we can better navigate the challenges of asynchronous effects in modern reactive frameworks.
 
-You can try inserting the code snippets into the sandbox at [this link](https://svelte.dev/tutorial/svelte/welcome-to-svelte).
